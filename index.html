@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Game for Students</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+
+body {
+background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+ font-family: 'Times New Roman', serif;
+}
+h1
+{
+ font-family: Garamond, serif;
+}
+input[type:number]
+{
+width:200px;
+}
+</style>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Game Develper Mohammadi</h1>
+    <div id="question-container">
+      <p id="question">Press Start to Begin</p>
+    </div>
+     <input type="number" id="answer-input" placeholder="Enter answer here">
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <button onclick="startGame()">Start Game</button>
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+    <p>Level: <span id="level">1</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
